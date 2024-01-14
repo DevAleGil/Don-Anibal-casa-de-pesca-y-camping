@@ -1,0 +1,152 @@
+:root {
+  --color-1: rgb(10, 175, 240);
+  --color-2: rgb(93, 89, 89);
+  --color-3: rgb(255, 255, 255);
+  --color-4: rgb(0, 0, 0);
+}
+@media (max-width: 1200px) {
+  .header-2-hijo {
+    max-width: 900px;
+  }
+  .hero-section {
+    max-width: 700px;
+  }
+  .hero-img {
+    display: none;
+  }
+  .section-beneficios {
+    max-width: 800px;
+  }
+  .beneficios-title {
+    left: 300px;
+  }
+  .beneficio-1,
+  .beneficio-2,
+  .beneficio-3,
+  .beneficio-4 {
+    left: 305px;
+    width: 140px;
+    height: 140px;
+    top: 80px;
+  }
+  .beneficio-parrafo {
+    font-size: 0.8rem;
+  }
+
+  .contacto {
+    flex-direction: column;
+    max-width: 700px;
+  }
+}
+
+@media (max-width: 800px) {
+  .navbar-list {
+    display: none;
+  }
+
+  .menu-desplegable {
+    display: block;
+  }
+  #menu:checked ~ .navbar-list {
+    display: flex;
+  }
+  .header-logo {
+    left: -25px;
+  }
+  .registro-login {
+    flex-direction: column;
+  }
+  .hero-section {
+    max-width: 500px;
+  }
+
+  .section-beneficios {
+    flex-direction: column;
+  }
+  .container-beneficios {
+    height: 700px;
+    width: 300px;
+  }
+  .beneficios-title {
+    left: 70px;
+    top: 270px;
+    width: 160px;
+    height: 160px;
+  }
+  .beneficios-title h2 {
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+  .beneficio-1,
+  .beneficio-2,
+  .beneficio-3,
+  .beneficio-4 {
+    width: 120px;
+    height: 120px;
+    left: 90px;
+  }
+  .beneficio-parrafo {
+    font-size: 0.7rem;
+    font-weight: 500;
+  }
+
+  .beneficio-1 {
+    top: 440px;
+  }
+  .beneficio-2 {
+    top: 10px;
+  }
+  .beneficio-3 {
+    top: 570px;
+  }
+  .beneficio-4 {
+    top: 140px;
+  }
+  .contacto {
+    max-width: 600px;
+  }
+
+  .footer-logo-list {
+    display: none;
+  }
+}
+@media (max-width: 500px) {
+  .header-1 p {
+    font-size: 0.8rem;
+  }
+  .navbar-list {
+    left: 100px;
+    gap:30px;
+    
+  }
+  .navbar-link{
+    font-size: 0.8rem;
+  }
+  .registro-login-link {
+    font-size: 0.8rem;
+  }
+  .hero-section {
+    max-width: 400px;
+  }
+  .contacto {
+    max-width: 400px;
+  }
+  form {
+    width: 300px;
+  }
+  textarea {
+    width: 300px;
+  }
+  .info-ubicacion {
+    width: 300px;
+  }
+  iframe {
+    width: 250px;
+  }
+
+  .footer-1 {
+    flex-direction: column;
+    gap: 10px;
+    height: 40vh;
+  }
+}
