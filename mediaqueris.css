@@ -9,7 +9,7 @@
     max-width: 900px;
   }
   .hero-section {
-    max-width: 700px;
+    max-width: 800px;
   }
   .hero-img {
     display: none;
@@ -42,6 +42,7 @@
 @media (max-width: 800px) {
   .navbar-list {
     display: none;
+    gap: 40px;
   }
 
   .menu-desplegable {
@@ -110,20 +111,34 @@
     display: none;
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   .header-1 p {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
+    text-align: center;
   }
   .navbar-list {
-    left: 100px;
-    gap:30px;
-    
+    width: 100%;
+    height: calc(100vh - 220px);
+    position: absolute;
+    top: 220px;
+    left: 0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-1);
+    z-index: 10;
+    gap: 80px;
   }
-  .navbar-link{
-    font-size: 0.8rem;
+  .navbar-link {
+    color: var(--color-4);
+    font-size: 1.2rem;
   }
-  .registro-login-link {
-    font-size: 0.8rem;
+
+  .registro-login {
+    display: none;
+  }
+  .header-logo {
+    left: 20px;
   }
   .hero-section {
     max-width: 400px;
@@ -148,5 +163,16 @@
     flex-direction: column;
     gap: 10px;
     height: 40vh;
+  }
+}
+@media (max-width: 400px) {
+  .hero-section {
+    max-width: 350px;
+  }
+  .hero-parrafo {
+    font-size: 0.8rem;
+  }
+  .contacto {
+    max-width: 350px;
   }
 }
