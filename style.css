@@ -253,24 +253,7 @@ main {
 .beneficio-4 {
   left: 950px;
 }
-/*
-.container-beneficios:hover .beneficio-1 {
-  transform: translateX(250px);
-  transition: 2s;
-}
-.container-beneficios:hover .beneficio-2 {
-  transform: translateX(-250px);
-  transition: 2s;
-}
-.container-beneficios:hover .beneficio-3 {
-  transform: translateX(480px);
-  transition: 3s;
-}
-.container-beneficios:hover .beneficio-4 {
-  transform: translateX(-480px);
-  transition: 3s;
-}
-*/
+
 /* Seccion Productos*/
 
 .section-cards {
@@ -532,6 +515,6 @@ footer {
   color: var(--color-3);
   text-align: center;
   margin: 20px 0;
-  font-size: 0.8rem;
+  font-size: 1rem;
   font-weight: 500;
 }

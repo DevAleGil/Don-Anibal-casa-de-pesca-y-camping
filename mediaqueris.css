@@ -189,6 +189,9 @@
     gap: 10px;
     height: 40vh;
   }
+  .footer-2{
+    font-size: 0.8rem;
+  }
 }
 @media (max-width: 400px) {
   .hero-section {
@@ -199,5 +202,8 @@
   }
   .contacto {
     max-width: 350px;
+  }
+  .footer-2 p{
+    max-width: 380px;
   }
 }
