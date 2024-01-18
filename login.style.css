@@ -4,6 +4,7 @@
   --color-3: rgb(255, 255, 255);
   --color-4: rgb(0, 0, 0);
 }
+
 * {
   margin: 0;
   padding: 0;
@@ -14,13 +15,15 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
   background-color: var(--color-1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .login {
   width: 500px;
   height: 400px;
   background-color: var(--color-2);
-  margin: auto;
-  margin-top: 200px;
+  margin-top: 100px;
   padding: 30px;
   box-shadow: 5px 15px 20px var(--color-2);
 }
@@ -70,73 +73,14 @@ body {
   color: var(--color-3);
 }
 
-/*Burbuja fondo*/
-.burbuja {
-  background-color: var(--color-3);
-  border-radius: 50%;
-  position: absolute;
-  bottom: 0;
-
-  animation: burbuja 3s linear infinite;
-}
-.burbuja:nth-child(1) {
-  width: 50px;
-  height: 50px;
-  left: 20px;
-}
-.burbuja:nth-child(2) {
-  width: 80px;
-  height: 80px;
-  left: 100px;
-  animation-duration: 4s;
-}
-.burbuja:nth-child(3) {
-  width: 50px;
-  height: 50px;
-  left: 250px;
-  animation-duration: 5s;
-}
-.burbuja:nth-child(4) {
-  width: 20px;
-  height: 20px;
-  left: 500px;
-  animation-duration: 5s;
-}
-.burbuja:nth-child(5) {
-  width: 60px;
-  height: 60px;
-  left: 800px;
-  animation-duration: 7s;
-}
-.burbuja:nth-child(5) {
-  width: 60px;
-  height: 60px;
-  left: 1000px;
-  animation-duration: 6s;
-}
-.burbuja:nth-child(6) {
-  width: 40px;
-  height: 40px;
-  left: 1200px;
-  animation-duration: 3s;
-}
-.burbuja:nth-child(7) {
-  width: 50px;
-  height: 50px;
-  left: 1300px;
-  animation-duration: 5s;
+@media(max-width:550px){
+  .login{
+    width: 400px;
+  }
 }
 
-@keyframes burbuja {
-  0% {
-    bottom: 0;
-    opacity: 1;
-  }
-  40% {
-    opacity: 0.3;
-  }
-  100% {
-    bottom: 100vh;
-    opacity: 1;
+@media(max-width:450px){
+  .login{
+    width: 300px;
   }
 }

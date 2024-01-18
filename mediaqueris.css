@@ -24,15 +24,25 @@
   .beneficio-2,
   .beneficio-3,
   .beneficio-4 {
-    left: 305px;
     width: 140px;
     height: 140px;
     top: 80px;
   }
+  .beneficio-1 {
+    left: 5px;
+  }
+  .beneficio-2 {
+    left: 150px;
+  }
+  .beneficio-3 {
+    left: 510px;
+  }
+  .beneficio-4 {
+    left: 655px;
+  }
   .beneficio-parrafo {
     font-size: 0.8rem;
   }
-
   .contacto {
     flex-direction: column;
     max-width: 700px;
@@ -42,7 +52,7 @@
 @media (max-width: 800px) {
   .navbar-list {
     display: none;
-    gap: 40px;
+    gap: 30px;
   }
 
   .menu-desplegable {
@@ -70,7 +80,7 @@
   }
   .beneficios-title {
     left: 70px;
-    top: 270px;
+    top: 10px;
     width: 160px;
     height: 160px;
   }
@@ -86,23 +96,28 @@
     height: 120px;
     left: 90px;
   }
+
   .beneficio-parrafo {
     font-size: 0.7rem;
     font-weight: 500;
   }
 
   .beneficio-1 {
-    top: 440px;
+    top: 180px;
   }
   .beneficio-2 {
-    top: 10px;
+    top: 310px;
   }
   .beneficio-3 {
-    top: 570px;
+    top: 440px;
   }
   .beneficio-4 {
-    top: 140px;
+    top: 570px;
   }
+  .container-beneficios:hover .beneficio-1 {
+    transform: translateY();
+  }
+
   .contacto {
     max-width: 600px;
   }
@@ -125,11 +140,13 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: var(--color-1);
+    background: linear-gradient(var(--color-1),var(--color-2));
     z-index: 10;
-    gap: 80px;
+    gap: 60px;
+    border-bottom: 3px solid var(--color-4);
   }
-  .navbar-link {
+  .navbar-link,
+  .navbar-link-movile {
     color: var(--color-4);
     font-size: 1.2rem;
   }
@@ -137,6 +154,14 @@
   .registro-login {
     display: none;
   }
+
+  .navbar-link-movile {
+    display: flex;
+  }
+  .movile-ultima{
+    order: 1;
+  }
+
   .header-logo {
     left: 20px;
   }

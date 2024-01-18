@@ -2,7 +2,7 @@
   --color-1: rgb(10, 175, 240);
   --color-2: rgb(93, 89, 89);
   --color-3: rgb(255, 255, 255);
-  --color-4: rgb(0,0,0) 
+  --color-4: rgb(0, 0, 0);
 }
 * {
   margin: 0;
@@ -13,12 +13,13 @@
 }
 body {
   background-color: var(--color-1);
+  display: flex;
+  justify-content: center;
 }
 
 section {
   width: 500px;
-  height: 550px;
-  margin: 200px auto;
+  margin: 100px;
   background-color: var(--color-2);
   padding: 30px;
   box-shadow: 5px 15px 20px var(--color-2);
@@ -45,6 +46,7 @@ section {
   display: flex;
   gap: 20px;
   width: 100%;
+  
 }
 .registro-input {
   width: 350px;
@@ -54,7 +56,9 @@ section {
 .registro-dato-label {
   width: 70px;
   color: var(--color-3);
+  font-size: 1rem;
 }
+
 
 .registro-dato-fecha {
   color: var(--color-3);
@@ -66,7 +70,7 @@ select {
 }
 
 .verificacion {
-  margin-top: 20px;
+  margin: 20px;
   color: var(--color-3);
 }
 
@@ -97,82 +101,41 @@ button {
 button:hover {
   text-decoration: underline;
 }
-label{
+label {
   font-size: 1rem;
   font-weight: bold;
 }
-
-/*Burbuja fondo*/
-.burbuja{
-  
-  background-color: var(--color-3);
-  border-radius: 50%;
-  position: absolute;
-  bottom: 0;
-  
-  animation: burbuja 3s linear infinite;
-
- 
-}
-.burbuja:nth-child(1){
-  width: 50px;
-  height: 50px;
-  left: 20px;
-
-}
-.burbuja:nth-child(2){
-  width: 80px;
-  height: 80px;
-  left: 100px;
-  animation-duration: 4s;
-}
-.burbuja:nth-child(3){
-  width: 50px;
-  height: 50px;
-  left: 250px;
-  animation-duration: 5s;
-}
-.burbuja:nth-child(4){
-  width: 20px;
-  height: 20px;
-  left: 500px;
-  animation-duration: 5s;
-}
-.burbuja:nth-child(5){
-  width: 60px;
-  height: 60px;
-  left: 800px;
-  animation-duration: 7s;
-}
-.burbuja:nth-child(5){
-  width: 60px;
-  height: 60px;
-  left: 1000px;
-  animation-duration: 6s;
-}
-.burbuja:nth-child(6){
-  width: 40px;
-  height: 40px;
-  left: 1200px;
-  animation-duration: 3s;
-}
-.burbuja:nth-child(7){
-  width: 50px;
-  height: 50px;
-  left: 1300px;
-  animation-duration: 5s;
-}
-
-@keyframes burbuja{
-  0%{
-    bottom: 0;
-    opacity: 1;
+@media (max-width: 550px) {
+  .section-registro {
+    width: 400px;
+    padding: 20px;
   }
-  40%{
-    opacity: 0.3;
+
+  .registro-input {
+    width: 300px;
   }
-  100%{
-    bottom: 100vh;
-    opacity: 1;
+      
+  .registro-bottun {
+    flex-direction: column;
+    align-items: center;
   }
+  button {
+    width: 60%;
+  }
+}
+@media (max-width: 400px){
+  .section-registro{
+    width: 320px;
+    
+  }
+  .registro-input{
+    width: 200px;
+  }
+  .verificacion{
+    font-size: 0.8rem;
+  }
+  button{
+    width: 70%;
+  }
+
 }

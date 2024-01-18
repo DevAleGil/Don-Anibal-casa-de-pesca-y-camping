@@ -97,7 +97,7 @@ header {
   font-size: 25px;
   color: var(--color-3);
 }
-i:hover{
+i:hover {
   color: var(--color-1);
 }
 
@@ -126,11 +126,17 @@ i:hover{
   display: flex;
   gap: 50px;
 }
-.navbar-link {
+.navbar-link,
+.navbar-link-movile {
   color: var(--color-3);
   font-size: 1.2rem;
   font-weight: bold;
 }
+
+.navbar-link-movile {
+  display: none;
+}
+
 .navbar-link:hover {
   color: var(--color-1);
 }
@@ -219,12 +225,11 @@ main {
   height: 160px;
   background-color: var(--color-2);
   border-radius: 50%;
+  border: 3px dashed var(--color-1);
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
-  position: absolute;
-
   position: absolute;
   left: 520px;
   top: 70px;
@@ -235,7 +240,20 @@ main {
   padding: 20px;
   color: var(--color-3);
 }
-
+.beneficio-1 {
+  left: 100px;
+  z-index: 5;
+}
+.beneficio-2 {
+  left: 300px;
+}
+.beneficio-3 {
+  left: 750px;
+}
+.beneficio-4 {
+  left: 950px;
+}
+/*
 .container-beneficios:hover .beneficio-1 {
   transform: translateX(250px);
   transition: 2s;
@@ -252,7 +270,7 @@ main {
   transform: translateX(-480px);
   transition: 3s;
 }
-
+*/
 /* Seccion Productos*/
 
 .section-cards {
