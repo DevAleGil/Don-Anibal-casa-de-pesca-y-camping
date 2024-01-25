@@ -462,12 +462,17 @@ textarea {
 
 .contacto-redes {
   display: flex;
+  justify-content: center;
   gap: 20px;
   margin-top: 10px;
 }
 
 .contacto-redes-img {
   width: 30px;
+}
+iframe{
+  width: 400px;
+  height: 200px;
 }
 
 /*Footer*/
@@ -483,6 +488,7 @@ footer {
   justify-content: space-around;
   align-items: center;
   height: 30vh;
+  margin-top: 20px;
 }
 
 .footer-1 h4 {
